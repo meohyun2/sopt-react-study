@@ -1,3 +1,5 @@
+const fetch = require('node-fetch');
+
 fetch("https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/autosuggest/v1.0/UK/GBP/en-GB/?query=Stockholm", {
 	"method": "GET",
 	"headers": {

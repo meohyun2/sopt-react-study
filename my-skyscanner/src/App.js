@@ -1,13 +1,17 @@
 import React from 'react';
 import Header from './component/header/header';
 import SearchResult from './component/body/search-result';
+import {SearchProvider} from './store/search-store';
+
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <SearchResult/>
-    </div>
+    <SearchProvider>
+      <div className="App">
+        <SearchResult/>
+        <Header/>
+      </div>
+    </SearchProvider>
   );
 }
 

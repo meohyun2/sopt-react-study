@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import {SearchContext} from '../../store/search-store';
 
 const SearchResult = () => {
+
+  const [trash,setTrash] = useContext(SearchContext);
+
+  console.log(trash);
+
   return (
     <div>
-      <p>here is text.</p>
+      <p>{trash}</p>
     </div>
   )
 }
