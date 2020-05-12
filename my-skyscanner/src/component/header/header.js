@@ -1,12 +1,13 @@
 import React from 'react';
 import Title from './title';
-import Search from './search';
+import InputForm from './infoForm';
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
     background: papayawhip;
     margin: 2em;
     padding: 1em;
+    display:grid;
 `;
 
 const Header = () =>{
@@ -14,6 +15,7 @@ const Header = () =>{
     <div>
       <Wrapper>
         <Title/>
+        <InputForm/>
       </Wrapper>
     </div>
   )

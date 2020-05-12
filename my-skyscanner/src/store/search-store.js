@@ -3,11 +3,11 @@ import React,{createContext,useState} from 'react';
 export const SearchContext = createContext();
 
 const initialValue = {
-  code:0,
-  json:{
+  resCode:0,
+  message:{
     // Result after parsed
   },
-  message:''
+  resMessage:''
 };
 
 export const SearchProvider = (props) => {

@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
 
-const Div = styled.div`
-  display:grid;
-`;
-
 const StyledButton = styled.button`
   width:100px;height:80;
   margin:auto;
@@ -16,14 +12,11 @@ const StyledButton = styled.button`
   border-radius: 3px;
 `;
 
-
-const Button = () => {
+const Button = (props) => {
   return(
-    <Div>
       <StyledButton>
         Search
       </StyledButton>
-    </Div>
   );
 }
 

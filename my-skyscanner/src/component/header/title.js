@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Search from './search';
+import InputForm from './infoForm';
 
 const Div = styled.div`
 `;
@@ -18,7 +18,6 @@ const Title = () => {
       <StyleTitle>
           Search quotes which are cheapest flights.
       </StyleTitle>
-      <Search/>
     </Div>
   );
 }
