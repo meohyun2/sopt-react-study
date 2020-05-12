@@ -10,6 +10,7 @@ const placeParser = (body) => {
           CountryName : element.CountryName
         }
         result.push(tempData);
+        console.log(result);
       });
       return result;
     }else{

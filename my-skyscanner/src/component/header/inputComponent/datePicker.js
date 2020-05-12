@@ -14,9 +14,7 @@ const DatetimePicker = (props) => {
   }
 
   return(
-    <div>
-      <DatePicker value={searchDate} onChange={_onChange}></DatePicker>
-    </div>
+    <DatePicker value={searchDate} onChange={_onChange}></DatePicker>
   );
 }
 

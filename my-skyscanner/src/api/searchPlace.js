@@ -17,10 +17,11 @@ async function searchPlace (query) {
 	});
 	if(result){
 		const resJson = await result.json();
-		const parsedJson = (placeParser(resJson));
+		console.log(resJson)
+		const parsedJson = await placeParser(resJson);
 		if(parsedJson){
-			console.log(parsedJson);
-			return utils.success(resCode.SUCCESS,resMessage.SUCCESS,parsedJson);
+			console.log(parsedJson[0]);
+			return utils.success(resCode.SUCCESS,resMessage.SUCCESS,parsedJson[0]);
 		}else{
 			console.log('error)bad request');
 			return utils.fail(resCode.BAD_REQUEST,resMessage.BAD_REQUEST);
@@ -31,5 +32,3 @@ async function searchPlace (query) {
 }
 
 module.exports = searchPlace;
-
-searchPlace('인천');

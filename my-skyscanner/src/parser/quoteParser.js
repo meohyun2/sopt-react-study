@@ -1,5 +1,5 @@
 const quoteParser = (body) => {
-  if(!body.Quotes){
+  if(!body.Quotes[0]){
     return null;
   }else{
     const result = {

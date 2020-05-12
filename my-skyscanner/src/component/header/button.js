@@ -2,8 +2,9 @@ import styled from 'styled-components';
 import React from 'react';
 
 const StyledButton = styled.button`
-  width:100px;height:80;
-  margin:auto;
+  flex:1;
+  width:100px; height:80;
+  margin:10px;
   margin-top:30px;
   background : palevioletred;
   color : white;

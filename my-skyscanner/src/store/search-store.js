@@ -2,17 +2,16 @@ import React,{createContext,useState} from 'react';
 
 export const SearchContext = createContext();
 
-const initialValue = {
-  resCode:0,
-  message:{
-    // Result after parsed
-  },
-  resMessage:''
-};
+const initialState = {
+  src:'',
+  dest:'',
+  outboundDate:'',
+  inboundDate:''
+} 
 
 export const SearchProvider = (props) => {
 
-  const [searchData,setSearchData] = useState("스토어의 초깃값을 전달하였습니다.");
+  const [searchData,setSearchData] = useState();
   
   return(
     <SearchContext.Provider value = {[searchData,setSearchData]}>

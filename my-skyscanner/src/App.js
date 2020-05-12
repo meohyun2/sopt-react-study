@@ -8,8 +8,8 @@ function App() {
   return (
     <SearchProvider>
       <div className="App">
-        <SearchResult/>
         <Header/>
+        <SearchResult/>
       </div>
     </SearchProvider>
   );
